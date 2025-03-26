@@ -1,0 +1,31 @@
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+
+}
+
+/* Main container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding-top: 60px; /* Ensure content doesn't overlap with navbar */
+}
+
+/* Center content inside the app */
+.content {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+}
+body{
+  color:teal;
+  background-color: teal;
+
+}

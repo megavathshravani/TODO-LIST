@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    background-color: #85bffa; /* Dark Blue Shade */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Dashboard Container */
+  .dashboard {
+    width: 1200px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Task Input Section */
+  .task-input {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .task-input input,
+  .task-input select,
+  .task-input button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  /* Task Input Button */
+  .task-input button {
+    background: #0073e6;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  .task-input button:hover {
+    background: #005bb5;
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Task Items */
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* High Priority */
+  .task-item.high {
+    background: #ff6666;
+    color: white;
+  }
+  
+  /* Medium Priority */
+  .task-item.medium {
+    background: #ffd966;
+    color: #333;
+  }
+  
+  /* Low Priority */
+  .task-item.low {
+    background: #66cc66;
+    color: white;
+  }
+  
+  /* Delete Button */
+  .task-item button {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .task-item button:hover {
+    background: #b71c1c;
+  }
+  
+  /* Navbar and To-Do Dashboard Padding */
+  .navbar + .dashboard {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-container {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #1a252f;
+      width: 200px;
+      padding: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    .nav-container.active {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+    }
+  
+    .nav-links a {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+    }
+  }
+  
